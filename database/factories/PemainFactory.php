@@ -17,7 +17,9 @@ class PemainFactory extends Factory
     public function definition(): array
     {
         return [
-            //
+            "nama_pemain" => fake()->name(),
+            "no_punggung" => fake()->randomNumber(2,false),
+            "posisi" => fake()->randomElement(['Striker', 'Back', 'Kiper']),
         ];
     }
 }
